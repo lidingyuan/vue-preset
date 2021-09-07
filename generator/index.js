@@ -1,0 +1,19 @@
+module.exports = (api, options, rootOptions) => {
+  api.extendPackage({
+    "name": "test-vite",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build"
+    },
+    "dependencies": {
+      "vue": "^3.0.4"
+    },
+    "devDependencies": {
+      "vite": "^1.0.0-rc.13",
+      "@vue/compiler-sfc": "^3.0.4"
+    }
+  })
+
+  api.render('./template')
+}
